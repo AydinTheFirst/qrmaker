@@ -117,12 +117,15 @@ export const fr: TranslationSchema = {
       networkName: "Nom du Réseau (SSID)",
       password: "Mot de Passe",
       security: "Type de Sécurité",
+      securityType: "Type de Sécurité",
       hidden: "Réseau Caché",
+      hiddenNetwork: "Réseau Caché",
       networkPlaceholder: "MonReseauWiFi",
       passwordPlaceholder: "mot_de_passe_wifi_123",
       securityOptions: {
         none: "Aucune (Ouvert)",
         wep: "WEP",
+        wpa: "WPA/WPA2",
         WPA: "WPA/WPA2",
       },
       helpText: "Créez un code QR pour une connexion Wi-Fi facile",
@@ -142,8 +145,12 @@ export const fr: TranslationSchema = {
 
   // QR Display component
   qrDisplay: {
+    title: "Aperçu du code QR",
+    description:
+      "Votre code QR généré apparaîtra ici. Vous pouvez le télécharger en tant qu'image PNG de haute qualité.",
     noData: "Aucune donnée de code QR disponible",
     downloadButton: "Télécharger PNG",
+    preview: "Aperçu",
     qrInfo: {
       type: "Type",
       size: "Taille",

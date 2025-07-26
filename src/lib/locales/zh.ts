@@ -114,12 +114,15 @@ export const zh: TranslationSchema = {
       networkName: "网络名称（SSID）",
       password: "密码",
       security: "安全类型",
+      securityType: "安全类型",
       hidden: "隐藏网络",
+      hiddenNetwork: "隐藏网络",
       networkPlaceholder: "我的WiFi网络",
       passwordPlaceholder: "wifi_password_123",
       securityOptions: {
         none: "无（开放）",
         wep: "WEP",
+        wpa: "WPA/WPA2",
         WPA: "WPA/WPA2",
       },
       helpText: "创建便于 Wi-Fi 连接的二维码",
@@ -138,8 +141,11 @@ export const zh: TranslationSchema = {
 
   // QR Display component
   qrDisplay: {
+    title: "二维码预览",
+    description: "您生成的二维码已准备好扫描和下载",
     noData: "没有二维码数据",
     downloadButton: "下载 PNG",
+    preview: "预览",
     qrInfo: {
       type: "类型",
       size: "大小",

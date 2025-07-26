@@ -116,12 +116,15 @@ export const it: TranslationSchema = {
       networkName: "Nome Rete (SSID)",
       password: "Password",
       security: "Tipo di Sicurezza",
+      securityType: "Tipo di Sicurezza",
       hidden: "Rete Nascosta",
+      hiddenNetwork: "Rete Nascosta",
       networkPlaceholder: "LaMiaReteWiFi",
       passwordPlaceholder: "password_wifi_123",
       securityOptions: {
         none: "Nessuna (Aperta)",
         wep: "WEP",
+        wpa: "WPA/WPA2",
         WPA: "WPA/WPA2",
       },
       helpText: "Crea un codice QR per connessione Wi-Fi facile",
@@ -140,8 +143,12 @@ export const it: TranslationSchema = {
 
   // QR Display component
   qrDisplay: {
+    title: "Anteprima Codice QR",
+    description:
+      "Il tuo codice QR generato pronto per la scansione e il download",
     noData: "Nessun dato del codice QR disponibile",
     downloadButton: "Scarica PNG",
+    preview: "Anteprima",
     qrInfo: {
       type: "Tipo",
       size: "Dimensione",

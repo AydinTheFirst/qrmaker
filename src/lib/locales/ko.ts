@@ -116,12 +116,15 @@ export const ko: TranslationSchema = {
       networkName: "네트워크 이름 (SSID)",
       password: "비밀번호",
       security: "보안 유형",
+      securityType: "보안 유형",
       hidden: "숨겨진 네트워크",
+      hiddenNetwork: "숨겨진 네트워크",
       networkPlaceholder: "내WiFi네트워크",
       passwordPlaceholder: "wifi_password_123",
       securityOptions: {
         none: "없음 (오픈)",
         wep: "WEP",
+        wpa: "WPA/WPA2",
         WPA: "WPA/WPA2",
       },
       helpText: "쉬운 Wi-Fi 연결을 위한 QR 코드를 만드세요",
@@ -140,8 +143,11 @@ export const ko: TranslationSchema = {
 
   // QR Display component
   qrDisplay: {
+    title: "QR 코드 미리보기",
+    description: "생성된 QR 코드가 스캔 및 다운로드 준비가 완료되었습니다",
     noData: "QR 코드 데이터가 없습니다",
     downloadButton: "PNG 다운로드",
+    preview: "미리보기",
     qrInfo: {
       type: "유형",
       size: "크기",

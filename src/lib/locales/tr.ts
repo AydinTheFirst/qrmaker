@@ -116,12 +116,15 @@ export const tr: TranslationSchema = {
       networkName: "Ağ Adı (SSID)",
       password: "Şifre",
       security: "Güvenlik Türü",
+      securityType: "Güvenlik Türü",
       hidden: "Gizli Ağ",
+      hiddenNetwork: "Gizli Ağ",
       networkPlaceholder: "BenimWiFiAgim",
       passwordPlaceholder: "wifi_sifre_123",
       securityOptions: {
         none: "Yok (Açık)",
         wep: "WEP",
+        wpa: "WPA/WPA2",
         WPA: "WPA/WPA2",
       },
       helpText: "Kolay Wi-Fi bağlantısı için QR kod oluşturun",
@@ -140,8 +143,12 @@ export const tr: TranslationSchema = {
 
   // QR Display
   qrDisplay: {
+    title: "QR Kod Önizleme",
+    description:
+      "Oluşturulan QR kodunuz burada görünecek. Yüksek kaliteli PNG görüntüsü olarak indirebilirsiniz.",
     noData: "QR kod verisi mevcut değil",
     downloadButton: "PNG İndir",
+    preview: "Önizleme",
     qrInfo: {
       type: "Tür",
       size: "Boyut",

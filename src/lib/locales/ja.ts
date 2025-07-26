@@ -117,12 +117,15 @@ export const ja: TranslationSchema = {
       networkName: "ネットワーク名（SSID）",
       password: "パスワード",
       security: "セキュリティタイプ",
+      securityType: "セキュリティタイプ",
       hidden: "隠しネットワーク",
+      hiddenNetwork: "隠しネットワーク",
       networkPlaceholder: "私のWiFiネットワーク",
       passwordPlaceholder: "wifi_password_123",
       securityOptions: {
         none: "なし（オープン）",
         wep: "WEP",
+        wpa: "WPA/WPA2",
         WPA: "WPA/WPA2",
       },
       helpText: "簡単なWi-Fi接続用のQRコードを作成します",
@@ -141,8 +144,11 @@ export const ja: TranslationSchema = {
 
   // QR Display component
   qrDisplay: {
+    title: "QRコードプレビュー",
+    description: "生成されたQRコードをスキャンとダウンロードの準備ができました",
     noData: "QRコードデータがありません",
     downloadButton: "PNG ダウンロード",
+    preview: "プレビュー",
     qrInfo: {
       type: "タイプ",
       size: "サイズ",

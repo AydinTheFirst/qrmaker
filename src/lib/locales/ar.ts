@@ -116,12 +116,15 @@ export const ar: TranslationSchema = {
       networkName: "اسم الشبكة (SSID)",
       password: "كلمة المرور",
       security: "نوع الأمان",
+      securityType: "نوع الأمان",
       hidden: "شبكة مخفية",
+      hiddenNetwork: "شبكة مخفية",
       networkPlaceholder: "شبكة WiFi الخاصة بي",
       passwordPlaceholder: "wifi_password_123",
       securityOptions: {
         none: "لا يوجد (مفتوح)",
         wep: "WEP",
+        wpa: "WPA/WPA2",
         WPA: "WPA/WPA2",
       },
       helpText: "أنشئ رمز QR للاتصال السهل بـ Wi-Fi",
@@ -140,8 +143,11 @@ export const ar: TranslationSchema = {
 
   // QR Display component
   qrDisplay: {
+    title: "معاينة رمز QR",
+    description: "رمز QR المُنشأ جاهز للمسح والتحميل",
     noData: "لا توجد بيانات رمز QR",
     downloadButton: "تحميل PNG",
+    preview: "معاينة",
     qrInfo: {
       type: "النوع",
       size: "الحجم",

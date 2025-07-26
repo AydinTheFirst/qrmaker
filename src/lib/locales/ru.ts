@@ -117,12 +117,15 @@ export const ru: TranslationSchema = {
       networkName: "Имя сети (SSID)",
       password: "Пароль",
       security: "Тип безопасности",
+      securityType: "Тип безопасности",
       hidden: "Скрытая сеть",
+      hiddenNetwork: "Скрытая сеть",
       networkPlaceholder: "МояWiFiСеть",
       passwordPlaceholder: "пароль_wifi_123",
       securityOptions: {
         none: "Нет (Открытая)",
         wep: "WEP",
+        wpa: "WPA/WPA2",
         WPA: "WPA/WPA2",
       },
       helpText: "Создайте QR-код для легкого подключения к Wi-Fi",
@@ -141,8 +144,11 @@ export const ru: TranslationSchema = {
 
   // QR Display component
   qrDisplay: {
+    title: "Предварительный просмотр QR-кода",
+    description: "Ваш сгенерированный QR-код готов для сканирования и загрузки",
     noData: "Данные QR-кода недоступны",
     downloadButton: "Скачать PNG",
+    preview: "Предварительный просмотр",
     qrInfo: {
       type: "Тип",
       size: "Размер",

@@ -104,10 +104,13 @@ export interface TranslationSchema {
       networkName: string;
       password: string;
       security: string;
+      securityType: string;
       hidden: string;
+      hiddenNetwork: string;
       networkPlaceholder: string;
       passwordPlaceholder: string;
       securityOptions: {
+        wpa: string;
         WPA: string;
         wep: string;
         none: string;
@@ -124,8 +127,11 @@ export interface TranslationSchema {
 
   // QR Display component
   qrDisplay: {
+    title: string;
+    description: string;
     noData: string;
     downloadButton: string;
+    preview: string;
     qrInfo: {
       type: string;
       size: string;

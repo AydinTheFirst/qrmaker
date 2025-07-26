@@ -1,5 +1,6 @@
-import { Github, Globe, Heart, Twitter } from "lucide-react";
+import { Github, Globe, Twitter } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -116,11 +117,14 @@ export default function Footer() {
             <p className="text-muted-foreground text-sm">
               {t("footer.copyright")}
             </p>
-            <p className="text-muted-foreground flex items-center text-sm">
-              {t("footer.madeWith")}{" "}
-              <Heart className="mx-1 h-4 w-4 text-red-500" />{" "}
-              {t("footer.inTurkey")}
-            </p>
+            <Link
+              to="https://github.com/AydinTheFirst"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="text-muted-foreground flex items-center text-sm"
+            >
+              AydinTheFirst
+            </Link>
           </div>
         </div>
       </div>
