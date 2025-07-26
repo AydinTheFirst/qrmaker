@@ -1,6 +1,10 @@
 # 🚀 QR Code Generator
 
-A modern, fast, and user-friendly QR code generator built with React Router 7, ShadCN UI, and Tailwind CSS. Create QR codes for URLs, text, contact information, and Wi-Fi networks with ease.
+<div align="center">
+  <img src="https://qrmaker.aydinthefirst.com/logo.png" alt="QR Maker Logo" width="128" height="128" />
+  
+  <p>A modern, fast, and user-friendly QR code generator built with React Router 7, ShadCN UI, and Tailwind CSS. Create QR codes for URLs, text, contact information, and Wi-Fi networks with ease. Fully optimized for SEO and performance.</p>
+</div>
 
 ![QR Code Generator](https://img.shields.io/badge/QR_Code_Generator-v1.0.0-blue?style=for-the-badge)
 ![React Router 7](https://img.shields.io/badge/React_Router-7-blue?style=for-the-badge&logo=react-router)
@@ -15,7 +19,8 @@ A modern, fast, and user-friendly QR code generator built with React Router 7, S
 - **Real-time Preview**: See your QR code as you type
 - **Instant Download**: Download as high-quality PNG
 - **Responsive Design**: Works perfectly on all devices
-- **Multi-language**: English and Turkish support with i18n
+- **Multi-language**: 12 languages support with i18n
+- **SEO Optimized**: React Router 7 native meta tags with structured data
 
 ### �️ Technical Features
 
@@ -89,12 +94,33 @@ pnpm check
 3. Choose security type (WPA/WPA2, WEP, or None)
 4. Generate QR code for easy network sharing
 
+## 🌐 SEO & Performance
+
+The application is fully optimized for search engines and performance:
+
+- **React Router 7 Native SEO**: Uses built-in meta functions for server-side rendering
+- **Structured Data**: JSON-LD schema markup for better search visibility
+- **Dynamic Meta Tags**: Context-aware titles and descriptions based on active QR type
+- **Sitemap & Robots.txt**: Proper search engine indexing
+- **PWA Ready**: Web app manifest for mobile installation
+- **Performance Optimized**: Preconnect, DNS prefetch, and other optimizations
+
 ## 🌐 Multi-language Support
 
-The application supports multiple languages with automatic detection:
+The application supports 12 languages with automatic detection:
 
 - 🇺🇸 **English** (default)
 - 🇹🇷 **Turkish** (Türkçe)
+- 🇪🇸 **Spanish** (Español)
+- 🇫🇷 **French** (Français)
+- 🇩🇪 **German** (Deutsch)
+- 🇮🇹 **Italian** (Italiano)
+- 🇵🇹 **Portuguese** (Português)
+- 🇷🇺 **Russian** (Русский)
+- 🇯🇵 **Japanese** (日本語)
+- 🇰🇷 **Korean** (한국어)
+- 🇨🇳 **Chinese** (中文)
+- 🇸🇦 **Arabic** (العربية)
 
 Language is automatically detected from browser settings and can be changed using the language selector in the navigation bar.
 

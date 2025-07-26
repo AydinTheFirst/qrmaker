@@ -12,8 +12,19 @@ export default function Navbar() {
         <div className="mr-4 flex">
           <a className="mr-6 flex items-center space-x-2" href="/">
             <div className="relative">
-              <QrCode className="text-primary h-6 w-6" />
-              <div className="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"></div>
+              <img
+                src="/logo.png"
+                alt="QR Maker Logo"
+                className="h-6 w-6 rounded"
+                onError={(e) => {
+                  // Fallback to QR icon if image fails to load
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = "none";
+                  const fallback = target.nextElementSibling as HTMLElement;
+                  if (fallback) fallback.style.display = "block";
+                }}
+              />
+              <QrCode className="text-primary hidden h-6 w-6" />
             </div>
             <span className="hidden bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text font-bold text-transparent sm:inline-block">
               QR Maker

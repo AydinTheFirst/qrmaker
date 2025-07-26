@@ -11,7 +11,19 @@ export default function Footer() {
           <div className="space-y-3">
             <div className="flex items-center space-x-2">
               <div className="relative">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-blue-500 to-purple-500">
+                <img
+                  src="/logo.png"
+                  alt="QR Maker Logo"
+                  className="h-8 w-8 rounded-lg"
+                  onError={(e) => {
+                    // Fallback to gradient if image fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = "none";
+                    const fallback = target.nextElementSibling as HTMLElement;
+                    if (fallback) fallback.style.display = "flex";
+                  }}
+                />
+                <div className="hidden h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-blue-500 to-purple-500">
                   <div className="h-4 w-4 rounded bg-white"></div>
                 </div>
               </div>

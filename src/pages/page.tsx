@@ -1,3 +1,5 @@
+import type { MetaFunction } from "react-router";
+
 import {
   Contact,
   Download,
@@ -11,13 +13,41 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useSearchParams } from "react-router";
 
+import StructuredData from "~/components/structured-data";
 import { Button } from "~/components/ui/button";
+import {
+  createWebApplicationSchema,
+  generateMeta,
+  SEO_DEFAULTS,
+} from "~/lib/seo";
 
 import QRDisplay from "./components/QRDisplay";
 import ContactForm from "./forms/contact-form";
 import TextForm from "./forms/text-form";
 import UrlForm from "./forms/url-form";
 import WifiForm from "./forms/wifi-form";
+
+// SEO Meta Function
+export const meta: MetaFunction = ({ location }) => {
+  const url = new URL(
+    location.pathname + location.search,
+    "https://qrmaker.aydinthefirst.com"
+  );
+  const tab = url.searchParams.get("tab") || "home";
+
+  // Get appropriate SEO content based on active tab
+  const seoContent =
+    tab in SEO_DEFAULTS
+      ? SEO_DEFAULTS[tab as keyof typeof SEO_DEFAULTS]
+      : SEO_DEFAULTS.home;
+
+  return generateMeta({
+    title: seoContent.title,
+    description: seoContent.description,
+    keywords: seoContent.keywords,
+    url: url.toString(),
+  });
+};
 
 interface QRData {
   value: string;
@@ -44,6 +74,26 @@ export default function Page() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [qrData, setQrData] = useState<QRData | null>(null);
   const { t } = useTranslation();
+
+  // Structured data for SEO
+  const structuredData = createWebApplicationSchema({
+    name: "QR Code Generator",
+    description:
+      "Create QR codes instantly for URLs, text, contact info, and WiFi. Free online QR code generator with download options.",
+    url: "https://qrmaker.aydinthefirst.com",
+    features: [
+      "URL QR Code Generation",
+      "Text QR Code Generation",
+      "Contact Info QR Code Generation (vCard)",
+      "WiFi QR Code Generation",
+      "High-Quality PNG Download",
+      "Mobile Responsive Design",
+      "Real-time QR Code Preview",
+      "Free to Use",
+    ],
+    author: "QR Maker",
+    version: "1.0.0",
+  });
 
   const tabs = [
     { color: "blue", icon: Link, id: "url", label: t("tabs.url") },
@@ -192,6 +242,9 @@ export default function Page() {
 
   return (
     <>
+      {/* Structured Data for SEO */}
+      <StructuredData data={structuredData} />
+
       {/* Hero Section */}
       <div className="mb-12 text-center">
         <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg">

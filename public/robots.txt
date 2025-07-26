@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://qrmaker.aydinthefirst.com/sitemap.xml
+
+# Block unnecessary crawling
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*utm_*
+Disallow: /*?*fbclid*
+Disallow: /build/
+
+# Allow all QR generator pages
+Allow: /?tab=*
