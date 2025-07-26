@@ -2,11 +2,13 @@
   "name": "qrmaker",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
-    "start": "node ./build/server/index.js",
-    "serve": "react-router-serve ./build/server/index.js",
+    "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
