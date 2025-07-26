@@ -1,4 +1,4 @@
-import type { TranslationSchema } from './types';
+import type { TranslationSchema } from "./types";
 
 export const ja: TranslationSchema = {
   // Common
@@ -97,7 +97,8 @@ export const ja: TranslationSchema = {
       orgPlaceholder: "会社名",
       websitePlaceholder: "https://company.com",
       addressPlaceholder: "東京都新宿区本町1-2-3",
-      helpText: "連絡先QRコードを作成するには、少なくとも1つのフィールドを入力してください",
+      helpText:
+        "連絡先QRコードを作成するには、少なくとも1つのフィールドを入力してください",
       tipsTitle: "連絡先 QRコードのヒント：",
       tips: [
         "少なくとも1つのフィールドを入力する必要があります",
@@ -151,7 +152,8 @@ export const ja: TranslationSchema = {
 
   // Footer
   footer: {
-    description: "高速で簡単なQRコードジェネレーター。URL、テキスト、連絡先情報、Wi-Fi用のプロフェッショナルなQRコード。",
+    description:
+      "高速で簡単なQRコードジェネレーター。URL、テキスト、連絡先情報、Wi-Fi用のプロフェッショナルなQRコード。",
     codes: "コード",
     cards: "カード",
     settings: "設定",

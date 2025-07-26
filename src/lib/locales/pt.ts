@@ -1,4 +1,4 @@
-import type { TranslationSchema } from './types';
+import type { TranslationSchema } from "./types";
 
 export const pt: TranslationSchema = {
   // Common
@@ -97,7 +97,8 @@ export const pt: TranslationSchema = {
       orgPlaceholder: "Nome da Empresa",
       websitePlaceholder: "https://empresa.com",
       addressPlaceholder: "Rua Principal 123, Cidade, País",
-      helpText: "Preencha pelo menos um campo para criar um código QR de contato",
+      helpText:
+        "Preencha pelo menos um campo para criar um código QR de contato",
       tipsTitle: "Dicas para Códigos QR de Contato:",
       tips: [
         "Pelo menos um campo deve ser preenchido",
@@ -151,7 +152,8 @@ export const pt: TranslationSchema = {
 
   // Footer
   footer: {
-    description: "Gerador de códigos QR rápido e fácil. Códigos QR profissionais para URLs, texto, informações de contato e Wi-Fi.",
+    description:
+      "Gerador de códigos QR rápido e fácil. Códigos QR profissionais para URLs, texto, informações de contato e Wi-Fi.",
     codes: "Códigos",
     cards: "Cartões",
     settings: "Configurações",

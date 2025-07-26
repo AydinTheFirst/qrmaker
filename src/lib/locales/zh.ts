@@ -1,4 +1,4 @@
-import type { TranslationSchema } from './types';
+import type { TranslationSchema } from "./types";
 
 export const zh: TranslationSchema = {
   // Common
@@ -27,8 +27,7 @@ export const zh: TranslationSchema = {
     subtitle:
       "使用我们现代且易于使用的工具为 URL、文本、联系信息和 Wi-Fi 创建二维码。",
     pngDownload: "下载 PNG",
-    description:
-      "即时免费生成高质量二维码。支持多种格式和即时下载。",
+    description: "即时免费生成高质量二维码。支持多种格式和即时下载。",
   },
 
   // Main navigation tabs
@@ -53,8 +52,7 @@ export const zh: TranslationSchema = {
       title: "网址二维码",
       websiteUrl: "网站网址",
       placeholder: "https://example.com",
-      helpText:
-        "输入您网站的完整地址（可以以 https:// 或 http:// 开头）",
+      helpText: "输入您网站的完整地址（可以以 https:// 或 http:// 开头）",
       tipsTitle: "网址二维码小贴士：",
       tips: [
         "输入您网站的完整地址",
@@ -151,7 +149,8 @@ export const zh: TranslationSchema = {
 
   // Footer
   footer: {
-    description: "快速简单的二维码生成器。为 URL、文本、联系信息和 Wi-Fi 生成专业二维码。",
+    description:
+      "快速简单的二维码生成器。为 URL、文本、联系信息和 Wi-Fi 生成专业二维码。",
     codes: "代码",
     cards: "卡片",
     settings: "设置",
@@ -175,8 +174,7 @@ export const zh: TranslationSchema = {
   // About section
   about: {
     title: "关于二维码生成器",
-    description:
-      "使用最新网络技术构建的现代、快速且易于使用的二维码生成器。",
+    description: "使用最新网络技术构建的现代、快速且易于使用的二维码生成器。",
     technology: "使用 React Router 7、TypeScript 和 Tailwind CSS 构建",
     openSource: "开源且免费使用",
   },

@@ -1,4 +1,4 @@
-import type { TranslationSchema } from './types';
+import type { TranslationSchema } from "./types";
 
 export const it: TranslationSchema = {
   // Common
@@ -151,7 +151,8 @@ export const it: TranslationSchema = {
 
   // Footer
   footer: {
-    description: "Generatore di codici QR veloce e facile. Codici QR professionali per URL, testo, informazioni di contatto e Wi-Fi.",
+    description:
+      "Generatore di codici QR veloce e facile. Codici QR professionali per URL, testo, informazioni di contatto e Wi-Fi.",
     codes: "Codici",
     cards: "Schede",
     settings: "Impostazioni",

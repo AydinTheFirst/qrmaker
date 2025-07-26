@@ -1,4 +1,4 @@
-import type { TranslationSchema } from './types';
+import type { TranslationSchema } from "./types";
 
 export const ar: TranslationSchema = {
   // Common
@@ -151,7 +151,8 @@ export const ar: TranslationSchema = {
 
   // Footer
   footer: {
-    description: "مولد رموز QR سريع وسهل. رموز QR احترافية للروابط والنصوص ومعلومات الاتصال وشبكات Wi-Fi.",
+    description:
+      "مولد رموز QR سريع وسهل. رموز QR احترافية للروابط والنصوص ومعلومات الاتصال وشبكات Wi-Fi.",
     codes: "الرموز",
     cards: "البطاقات",
     settings: "الإعدادات",

@@ -1,4 +1,4 @@
-import type { TranslationSchema } from './types';
+import type { TranslationSchema } from "./types";
 
 export const ru: TranslationSchema = {
   // Common
@@ -107,7 +107,8 @@ export const ru: TranslationSchema = {
       validation: {
         nameRequired: "Полное имя обязательно",
         atLeastOne: "Пожалуйста, заполните хотя бы одно поле",
-        invalidEmail: "Пожалуйста, введите действительный адрес электронной почты",
+        invalidEmail:
+          "Пожалуйста, введите действительный адрес электронной почты",
         invalidPhone: "Пожалуйста, введите действительный номер телефона",
       },
     },
@@ -151,7 +152,8 @@ export const ru: TranslationSchema = {
 
   // Footer
   footer: {
-    description: "Быстрый и простой генератор QR-кодов. Профессиональные QR-коды для URL, текста, контактной информации и Wi-Fi.",
+    description:
+      "Быстрый и простой генератор QR-кодов. Профессиональные QR-коды для URL, текста, контактной информации и Wi-Fi.",
     codes: "Коды",
     cards: "Карты",
     settings: "Настройки",

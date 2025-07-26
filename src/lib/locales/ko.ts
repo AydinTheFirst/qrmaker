@@ -1,4 +1,4 @@
-import type { TranslationSchema } from './types';
+import type { TranslationSchema } from "./types";
 
 export const ko: TranslationSchema = {
   // Common
@@ -151,7 +151,8 @@ export const ko: TranslationSchema = {
 
   // Footer
   footer: {
-    description: "빠르고 쉬운 QR 코드 생성기. URL, 텍스트, 연락처 정보 및 Wi-Fi용 전문 QR 코드.",
+    description:
+      "빠르고 쉬운 QR 코드 생성기. URL, 텍스트, 연락처 정보 및 Wi-Fi용 전문 QR 코드.",
     codes: "코드",
     cards: "카드",
     settings: "설정",

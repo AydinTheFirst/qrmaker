@@ -1,4 +1,4 @@
-import type { TranslationSchema } from './types';
+import type { TranslationSchema } from "./types";
 
 export const de: TranslationSchema = {
   // Common
@@ -69,8 +69,10 @@ export const de: TranslationSchema = {
     text: {
       title: "Text QR-Code",
       textContent: "Textinhalt",
-      placeholder: "Geben Sie den Text ein, den Sie zu Ihrem QR-Code hinzufügen möchten...",
-      helpText: "Sie können jeden Text, jede Nachricht oder Information hinzufügen",
+      placeholder:
+        "Geben Sie den Text ein, den Sie zu Ihrem QR-Code hinzufügen möchten...",
+      helpText:
+        "Sie können jeden Text, jede Nachricht oder Information hinzufügen",
       charactersCount: "{{count}}/500",
       tipsTitle: "Tipps für Text QR-Codes:",
       tips: [
@@ -97,7 +99,8 @@ export const de: TranslationSchema = {
       orgPlaceholder: "Firmenname",
       websitePlaceholder: "https://firma.com",
       addressPlaceholder: "Hauptstraße 123, Stadt, Land",
-      helpText: "Füllen Sie mindestens ein Feld aus, um einen Kontakt-QR-Code zu erstellen",
+      helpText:
+        "Füllen Sie mindestens ein Feld aus, um einen Kontakt-QR-Code zu erstellen",
       tipsTitle: "Tipps für Kontakt QR-Codes:",
       tips: [
         "Mindestens ein Feld muss ausgefüllt werden",
@@ -151,7 +154,8 @@ export const de: TranslationSchema = {
 
   // Footer
   footer: {
-    description: "Schneller und einfacher QR-Code-Generator. Professionelle QR-Codes für URLs, Text, Kontaktinformationen und Wi-Fi.",
+    description:
+      "Schneller und einfacher QR-Code-Generator. Professionelle QR-Codes für URLs, Text, Kontaktinformationen und Wi-Fi.",
     codes: "Codes",
     cards: "Karten",
     settings: "Einstellungen",

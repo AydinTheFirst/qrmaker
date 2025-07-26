@@ -1,4 +1,4 @@
-import type { TranslationSchema } from './types';
+import type { TranslationSchema } from "./types";
 
 export const fr: TranslationSchema = {
   // Common
@@ -70,7 +70,8 @@ export const fr: TranslationSchema = {
       title: "Code QR de Texte",
       textContent: "Contenu du Texte",
       placeholder: "Entrez le texte que vous voulez ajouter à votre code QR...",
-      helpText: "Vous pouvez ajouter n'importe quel texte, message ou information",
+      helpText:
+        "Vous pouvez ajouter n'importe quel texte, message ou information",
       charactersCount: "{{count}}/500",
       tipsTitle: "Conseils pour les Codes QR de Texte :",
       tips: [
@@ -133,7 +134,8 @@ export const fr: TranslationSchema = {
       ],
       validation: {
         networkRequired: "Le nom du réseau (SSID) est requis",
-        passwordRequired: "Le mot de passe est requis pour les réseaux sécurisés",
+        passwordRequired:
+          "Le mot de passe est requis pour les réseaux sécurisés",
       },
     },
   },
@@ -151,7 +153,8 @@ export const fr: TranslationSchema = {
 
   // Footer
   footer: {
-    description: "Générateur de codes QR rapide et facile. Codes QR professionnels pour URLs, texte, informations de contact et Wi-Fi.",
+    description:
+      "Générateur de codes QR rapide et facile. Codes QR professionnels pour URLs, texte, informations de contact et Wi-Fi.",
     codes: "Codes",
     cards: "Cartes",
     settings: "Paramètres",
