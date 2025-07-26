@@ -2,15 +2,7 @@ import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
-import { localeConfig } from "./locales";
-import { en } from "./locales/en";
-import { tr } from "./locales/tr";
-
-// Translation resources
-const resources = {
-  en: { translation: en },
-  tr: { translation: tr },
-};
+import { localeConfig, resources } from "./locales";
 
 i18n
   .use(LanguageDetector)

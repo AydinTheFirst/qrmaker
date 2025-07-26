@@ -3,7 +3,7 @@
 ## Current Sprint (v1.0.0) ✅
 
 > **Status**: Completed
-> **Goal**: MVP QR Code Generator
+> **Goal**: MVP QR Code Generator with Multi-language Support
 
 ### Core Features - DONE ✅
 
@@ -15,6 +15,8 @@
 - [x] Basic layout with Navbar/Footer
 - [x] Tab-based navigation with URL params
 - [x] Four QR code types implementation
+- [x] **Multi-language support** (12 languages)
+- [x] **Type-safe translations** with TypeScript
 
 ### QR Code Types - DONE ✅
 
@@ -31,6 +33,23 @@
 - [x] Download as PNG functionality
 - [x] Form validation and error states
 - [x] Loading states and feedback
+- [x] **Multi-language interface** (8 languages)
+- [x] **Automatic language detection**
+
+### Internationalization - DONE ✅
+
+- [x] **Complete i18n system** with react-i18next
+- [x] **6 language support**:
+  - [x] 🇺🇸 English (Default)
+  - [x] 🇹🇷 Turkish
+  - [x] 🇪🇸 Spanish
+  - [x] 🇫🇷 French
+  - [x] 🇩🇪 German
+  - [x] 🇮🇹 Italian
+- [x] **Type-safe translations** with TypeScript schemas
+- [x] **Browser language detection**
+- [x] **Language selector dropdown** with native names
+- [x] **Persistent language settings**
 
 ### Code Quality - DONE ✅
 

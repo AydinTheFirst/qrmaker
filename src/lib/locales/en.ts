@@ -1,4 +1,6 @@
-export const en = {
+import type { TranslationSchema } from "./types";
+
+export const en: TranslationSchema = {
   // Common
   common: {
     generate: "Generate",
@@ -103,6 +105,7 @@ export const en = {
         "Creates vCard format that works with all phones",
       ],
       validation: {
+        nameRequired: "Full name is required",
         atLeastOne: "Please fill in at least one field",
         invalidEmail: "Please enter a valid email address",
         invalidPhone: "Please enter a valid phone number",
@@ -112,16 +115,14 @@ export const en = {
       title: "Wi-Fi QR Code",
       networkName: "Network Name (SSID)",
       password: "Password",
-      securityType: "Security Type",
-      hiddenNetwork: "Hidden Network",
+      security: "Security Type",
+      hidden: "Hidden Network",
       networkPlaceholder: "MyWiFiNetwork",
       passwordPlaceholder: "wifi_password_123",
       securityOptions: {
         none: "None (Open)",
         wep: "WEP",
-        wpa: "WPA/WPA2",
-        wpa2: "WPA2",
-        wpa3: "WPA3",
+        WPA: "WPA/WPA2",
       },
       helpText: "Create a QR code for easy Wi-Fi connection",
       tipsTitle: "Tips for Wi-Fi QR Codes:",
@@ -139,20 +140,13 @@ export const en = {
 
   // QR Display
   qrDisplay: {
-    title: "Your QR Code",
-    description: "Fill out the form to generate your QR code",
-    downloadButton: "Download PNG",
-    downloadSvg: "Download SVG",
-    generatedSuccess: "QR code generated successfully!",
-    downloadSuccess: "QR code downloaded successfully!",
-    copySuccess: "QR code copied to clipboard!",
     noData: "No QR code data available",
-    generating: "Generating QR code...",
-    preview: "Preview",
-    downloadOptions: "Download Options",
-    size: "Size",
-    format: "Format",
-    quality: "Quality",
+    downloadButton: "Download PNG",
+    qrInfo: {
+      type: "Type",
+      size: "Size",
+      errorCorrection: "Error Correction",
+    },
   },
 
   // Footer
@@ -176,65 +170,7 @@ export const en = {
   // Language Selector
   language: {
     selectLanguage: "Select Language",
-    english: "English",
-    turkish: "Türkçe",
     currentLanguage: "Current language: {{language}}",
-    switchTo: "Switch to {{language}}",
-  },
-
-  // Error Messages
-  errors: {
-    general: "An error occurred",
-    networkError: "Network error. Please check your connection.",
-    qrGenerationFailed: "Failed to generate QR code",
-    downloadFailed: "Failed to download QR code",
-    invalidInput: "Invalid input provided",
-    fileTooLarge: "File is too large",
-    unsupportedFormat: "Unsupported file format",
-  },
-
-  // Success Messages
-  success: {
-    qrGenerated: "QR code generated successfully!",
-    downloaded: "QR code downloaded successfully!",
-    copied: "Copied to clipboard!",
-    saved: "Settings saved successfully!",
-  },
-
-  // Loading States
-  loading: {
-    generating: "Generating QR code...",
-    downloading: "Preparing download...",
-    processing: "Processing...",
-    saving: "Saving...",
-  },
-
-  // Features
-  features: {
-    multipleTypes: {
-      title: "Multiple QR Types",
-      description: "Support for URL, Text, Contact, and Wi-Fi QR codes",
-    },
-    instantPreview: {
-      title: "Instant Preview",
-      description: "See your QR code update in real-time as you type",
-    },
-    highQuality: {
-      title: "High Quality",
-      description: "Generate crisp, high-resolution QR codes",
-    },
-    freeToUse: {
-      title: "Free to Use",
-      description: "No registration required, completely free",
-    },
-    responsive: {
-      title: "Mobile Friendly",
-      description: "Works perfectly on all devices and screen sizes",
-    },
-    privacy: {
-      title: "Privacy First",
-      description: "All processing happens locally, no data sent to servers",
-    },
   },
 
   // About

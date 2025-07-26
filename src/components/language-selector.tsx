@@ -8,12 +8,15 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "~/components/ui/dropdown-menu";
-import { type Locale } from "~/lib/locales";
+import { type Locale, locales } from "~/lib/locales";
 
-const languageConfig = [
-  { code: "en" as Locale, name: "English", flag: "🇺🇸" },
-  { code: "tr" as Locale, name: "Türkçe", flag: "🇹🇷" },
-];
+// Create language config from supported locales
+const languageConfig = Object.entries(locales).map(([code, info]) => ({
+  code: code as Locale,
+  name: info.name,
+  nativeName: info.nativeName,
+  flag: info.flag,
+}));
 
 export function LanguageSelector() {
   const { i18n } = useTranslation();
@@ -31,7 +34,7 @@ export function LanguageSelector() {
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="sm" className="gap-2">
           <Globe className="h-4 w-4" />
-          <span className="hidden sm:inline">{currentLanguage.name}</span>
+          <span className="hidden sm:inline">{currentLanguage.nativeName}</span>
           <span className="sm:hidden">{currentLanguage.flag}</span>
         </Button>
       </DropdownMenuTrigger>
@@ -45,7 +48,7 @@ export function LanguageSelector() {
             }`}
           >
             <span className="mr-2">{language.flag}</span>
-            {language.name}
+            {language.nativeName}
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

@@ -1,4 +1,6 @@
-export const tr = {
+import type { TranslationSchema } from './types';
+
+export const tr: TranslationSchema = {
   // Common
   common: {
     generate: "Oluştur",
@@ -103,6 +105,7 @@ export const tr = {
         "Tüm telefonlarda çalışan vCard formatı oluşturur",
       ],
       validation: {
+        nameRequired: "Ad soyad gereklidir",
         atLeastOne: "Lütfen en az bir alanı doldurun",
         invalidEmail: "Lütfen geçerli bir e-posta adresi girin",
         invalidPhone: "Lütfen geçerli bir telefon numarası girin",
@@ -112,16 +115,14 @@ export const tr = {
       title: "Wi-Fi QR Kodu",
       networkName: "Ağ Adı (SSID)",
       password: "Şifre",
-      securityType: "Güvenlik Türü",
-      hiddenNetwork: "Gizli Ağ",
+      security: "Güvenlik Türü",
+      hidden: "Gizli Ağ",
       networkPlaceholder: "BenimWiFiAgim",
       passwordPlaceholder: "wifi_sifre_123",
       securityOptions: {
         none: "Yok (Açık)",
         wep: "WEP",
-        wpa: "WPA/WPA2",
-        wpa2: "WPA2",
-        wpa3: "WPA3",
+        WPA: "WPA/WPA2",
       },
       helpText: "Kolay Wi-Fi bağlantısı için QR kod oluşturun",
       tipsTitle: "Wi-Fi QR Kodları İçin İpuçları:",
@@ -139,20 +140,13 @@ export const tr = {
 
   // QR Display
   qrDisplay: {
-    title: "QR Kodunuz",
-    description: "QR kodunuzu oluşturmak için formu doldurun",
-    downloadButton: "PNG İndir",
-    downloadSvg: "SVG İndir",
-    generatedSuccess: "QR kod başarıyla oluşturuldu!",
-    downloadSuccess: "QR kod başarıyla indirildi!",
-    copySuccess: "QR kod panoya kopyalandı!",
     noData: "QR kod verisi mevcut değil",
-    generating: "QR kod oluşturuluyor...",
-    preview: "Önizleme",
-    downloadOptions: "İndirme Seçenekleri",
-    size: "Boyut",
-    format: "Format",
-    quality: "Kalite",
+    downloadButton: "PNG İndir",
+    qrInfo: {
+      type: "Tür",
+      size: "Boyut",
+      errorCorrection: "Hata Düzeltme",
+    },
   },
 
   // Footer
@@ -176,67 +170,7 @@ export const tr = {
   // Language Selector
   language: {
     selectLanguage: "Dil Seçin",
-    english: "English",
-    turkish: "Türkçe",
     currentLanguage: "Mevcut dil: {{language}}",
-    switchTo: "{{language}} diline geç",
-  },
-
-  // Error Messages
-  errors: {
-    general: "Bir hata oluştu",
-    networkError: "Ağ hatası. Lütfen bağlantınızı kontrol edin.",
-    qrGenerationFailed: "QR kod oluşturulamadı",
-    downloadFailed: "QR kod indirilemedi",
-    invalidInput: "Geçersiz giriş sağlandı",
-    fileTooLarge: "Dosya çok büyük",
-    unsupportedFormat: "Desteklenmeyen dosya formatı",
-  },
-
-  // Success Messages
-  success: {
-    qrGenerated: "QR kod başarıyla oluşturuldu!",
-    downloaded: "QR kod başarıyla indirildi!",
-    copied: "Panoya kopyalandı!",
-    saved: "Ayarlar başarıyla kaydedildi!",
-  },
-
-  // Loading States
-  loading: {
-    generating: "QR kod oluşturuluyor...",
-    downloading: "İndirme hazırlanıyor...",
-    processing: "İşleniyor...",
-    saving: "Kaydediliyor...",
-  },
-
-  // Features
-  features: {
-    multipleTypes: {
-      title: "Çoklu QR Türleri",
-      description: "URL, Metin, İletişim ve Wi-Fi QR kodları desteği",
-    },
-    instantPreview: {
-      title: "Anında Önizleme",
-      description:
-        "Yazdığınız anda QR kodunuzun gerçek zamanlı güncellemesini görün",
-    },
-    highQuality: {
-      title: "Yüksek Kalite",
-      description: "Net, yüksek çözünürlüklü QR kodları oluşturun",
-    },
-    freeToUse: {
-      title: "Ücretsiz Kullanım",
-      description: "Kayıt gerekmez, tamamen ücretsiz",
-    },
-    responsive: {
-      title: "Mobil Uyumlu",
-      description: "Tüm cihazlarda ve ekran boyutlarında mükemmel çalışır",
-    },
-    privacy: {
-      title: "Gizlilik Öncelikli",
-      description:
-        "Tüm işlemler yerel olarak yapılır, sunuculara veri gönderilmez",
-    },
   },
 
   // About
